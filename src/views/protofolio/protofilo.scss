@@ -1,0 +1,39 @@
+@use "../../sass/_MedQuery" as *;
+@use "../../sass/_Styles" as *;
+@use "../../sass/_var" as *;
+
+.proto {
+  .row {
+    justify-content: space-evenly;
+    div {
+      display: flex;
+      flex-direction: column;
+      background-color: $color5;
+      margin-bottom: 30px;
+      padding: 0;
+      img {
+        max-width: 100%;
+      }
+      h3 {
+        color: white;
+        text-align: center;
+        background-color: $color1;
+        padding: 5px 0px;
+      }
+      p {
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        background-color: $color1;
+        padding: 5px 10px;
+        margin: 20px auto;
+        display: block;
+        width: fit-content;
+      }
+    }
+  }
+}

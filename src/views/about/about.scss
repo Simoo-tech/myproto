@@ -1,0 +1,107 @@
+@use "../../sass/_var" as *;
+@use "../../sass/_Styles" as *;
+@use "../../sass/_MedQuery" as *;
+
+.about {
+  .row {
+    justify-content: space-between;
+
+    img {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+    }
+    .text {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      h2 {
+        color: $color1;
+        height: fit-content;
+      }
+      h3 {
+        color: white;
+      }
+      div {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        height: fit-content;
+        span {
+          color: white;
+          font-size: 18px;
+        }
+        p {
+          font-size: 18px;
+          color: $color3;
+          text-transform: capitalize;
+        }
+        a {
+          color: $color1;
+        }
+      }
+      .media {
+        justify-content: space-between;
+        border-top: solid 2px;
+        padding-top: 30px;
+        a {
+          background-color: $color1;
+          color: white;
+          height: fit-content;
+          padding: 5px 10px;
+          text-decoration: none;
+          border-radius: 15px;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          -ms-border-radius: 15px;
+          -o-border-radius: 15px;
+        }
+        ul {
+          display: flex;
+          li {
+            list-style: none;
+            a {
+              font-size: 20px;
+              background-color: transparent;
+            }
+            &:nth-child(1) a svg {
+              color: #3b5998;
+            }
+            &:nth-child(2) a svg {
+              color: #fb3958;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(smallphone) {
+    h2 {
+      margin: 10px 0px;
+      text-align: center;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    div {
+      margin-bottom: 10px;
+    }
+  }
+  @include breakpoint(small) {
+    align-items: center;
+    h2 {
+      margin: 10px 0px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    div {
+      margin-bottom: 10px;
+    }
+  }
+}

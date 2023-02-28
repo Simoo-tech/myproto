@@ -1,0 +1,100 @@
+@use "../../sass/_var" as *;
+@use "../../sass/_Styles" as *;
+@use "../../sass/_MedQuery" as *;
+
+.resume {
+  .row {
+    .skills {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      color: white;
+      p {
+        color: $color3;
+        font-size: 18px;
+        margin: 0;
+      }
+      h1 {
+        font-weight: bold;
+        margin: 20px 0px;
+      }
+      .skill {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px;
+        margin-bottom: 10px;
+        label {
+          margin-bottom: 10px;
+        }
+        .progress {
+          background-color: $color3;
+          position: relative;
+          &::after {
+            position: absolute;
+            top: 0;
+            right: 50%;
+            content: attr(width);
+          }
+          span {
+            background-color: $color1;
+          }
+        }
+      }
+    }
+    .cert {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      h1 {
+        color: white;
+      }
+      .box {
+        background-color: $color3;
+        padding: 10px 15px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        h4 {
+          color: white;
+        }
+        p {
+          color: black;
+          text-transform: capitalize;
+          margin: 5px 0px;
+        }
+        a {
+          text-decoration: none;
+          text-align: center;
+          margin: auto;
+          width: fit-content;
+          display: block;
+          background-color: $color1;
+          padding: 8px 20px;
+          color: white;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+        }
+      }
+    }
+  }
+  @include breakpoint(smallphone) {
+    .skills p {
+      font-size: 16px !important;
+    }
+    .cert {
+      h4 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@use "../../sass/_var" as *;
+@use "../../sass/_MedQuery" as *;
+
+.home {
+  height: calc(100vh - 80px);
+  position: relative;
+  background-color: $color2;
+  z-index: 1;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    .row {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      gap: 30px;
+      .text {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        h3 {
+          color: white;
+          font-size: 70px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .skill {
+          text-align: center;
+          color: white;
+          font-size: 32px;
+        }
+      }
+      .lang {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        align-self: flex-end;
+        gap: 10px;
+        a {
+          text-decoration: none;
+          padding: 1px 3px;
+          color: white;
+          font-size: 18px;
+        }
+      }
+      .social {
+        display: flex;
+        flex-direction: row;
+        align-self: self-end;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 20px;
+        a {
+          svg {
+            font-size: 25px;
+          }
+          &:nth-child(1) svg {
+            color: #3b5998;
+            padding: 0;
+          }
+          &:nth-child(2) svg {
+            color: #fb3958;
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(smallphone) {
+    .row {
+      .text {
+        h3 {
+          font-size: 50px !important;
+        }
+        .skill {
+          font-size: 25px !important;
+        }
+      }
+    }
+  }
+}

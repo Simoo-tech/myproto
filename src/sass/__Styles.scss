@@ -1,0 +1,52 @@
+@use "../sass/_var" as *;
+@use "../sass/_MedQuery" as *;
+
+@keyframes animate {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.title {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: capitalize;
+  position: relative;
+  margin: 0 auto 45px auto;
+  width: fit-content;
+  margin-bottom: 90px;
+  span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    width: 40%;
+    height: 4px;
+    background-color: $color1;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0%;
+      background-color: $color2;
+      bottom: 0;
+      width: 10px;
+      height: 100%;
+      animation: animate 2s infinite linear;
+      -webkit-animation: animate 2s infinite linear;
+    }
+  }
+}
+@include breakpoint(smallphone) {
+  .title {
+    font-size: 40px;
+    margin: 0 auto 50px auto;
+  }
+}
