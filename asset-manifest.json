@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/protofilo/static/css/main.468a35d2.css",
-    "main.js": "/protofilo/static/js/main.3cd96784.js",
-    "static/js/787.26e5272e.chunk.js": "/protofilo/static/js/787.26e5272e.chunk.js",
-    "static/media/temp1.png": "/protofilo/static/media/temp1.e30df105935509da7ebb.png",
-    "static/media/intro cyber sec.pdf_1.jpg": "/protofilo/static/media/intro cyber sec.pdf_1.610026d5b58491b3940f.jpg",
-    "static/media/temp2.png": "/protofilo/static/media/temp2.a7dcf07860442ca70a57.png",
-    "static/media/uiux.pdf_1.jpg": "/protofilo/static/media/uiux.pdf_1.22ab47763263e077482a.jpg",
-    "static/media/temp4.png": "/protofilo/static/media/temp4.53ad9697a2149080d942.png",
-    "static/media/introduction network.pdf_1.jpg": "/protofilo/static/media/introduction network.pdf_1.7a47992d5b2f8bf044be.jpg",
-    "static/media/Course_Certificate_En.pdf_1.jpg": "/protofilo/static/media/Course_Certificate_En.pdf_1.cc77481bb1a104f0dd93.jpg",
-    "static/media/Erhical hacking.pdf_1.jpg": "/protofilo/static/media/Erhical hacking.pdf_1.bfb6d03e4f0c557c2709.jpg",
-    "static/media/Salah.png": "/protofilo/static/media/Salah.713fe4433826634cd0ed.png",
-    "static/media/1.jpg": "/protofilo/static/media/1.6ec93804c67befdde1ad.jpg",
-    "static/media/temp3.png": "/protofilo/static/media/temp3.e907664a06d5f623c763.png",
-    "index.html": "/protofilo/index.html",
-    "main.468a35d2.css.map": "/protofilo/static/css/main.468a35d2.css.map",
-    "main.3cd96784.js.map": "/protofilo/static/js/main.3cd96784.js.map",
-    "787.26e5272e.chunk.js.map": "/protofilo/static/js/787.26e5272e.chunk.js.map"
+    "main.css": "/static/css/main.468a35d2.css",
+    "main.js": "/static/js/main.66edb3a3.js",
+    "static/js/787.26e5272e.chunk.js": "/static/js/787.26e5272e.chunk.js",
+    "static/media/temp1.png": "/static/media/temp1.e30df105935509da7ebb.png",
+    "static/media/intro cyber sec.pdf_1.jpg": "/static/media/intro cyber sec.pdf_1.610026d5b58491b3940f.jpg",
+    "static/media/temp2.png": "/static/media/temp2.a7dcf07860442ca70a57.png",
+    "static/media/uiux.pdf_1.jpg": "/static/media/uiux.pdf_1.22ab47763263e077482a.jpg",
+    "static/media/temp4.png": "/static/media/temp4.53ad9697a2149080d942.png",
+    "static/media/introduction network.pdf_1.jpg": "/static/media/introduction network.pdf_1.7a47992d5b2f8bf044be.jpg",
+    "static/media/Course_Certificate_En.pdf_1.jpg": "/static/media/Course_Certificate_En.pdf_1.cc77481bb1a104f0dd93.jpg",
+    "static/media/Erhical hacking.pdf_1.jpg": "/static/media/Erhical hacking.pdf_1.bfb6d03e4f0c557c2709.jpg",
+    "static/media/Salah.png": "/static/media/Salah.713fe4433826634cd0ed.png",
+    "static/media/1.jpg": "/static/media/1.6ec93804c67befdde1ad.jpg",
+    "static/media/temp3.png": "/static/media/temp3.e907664a06d5f623c763.png",
+    "index.html": "/index.html",
+    "main.468a35d2.css.map": "/static/css/main.468a35d2.css.map",
+    "main.66edb3a3.js.map": "/static/js/main.66edb3a3.js.map",
+    "787.26e5272e.chunk.js.map": "/static/js/787.26e5272e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.468a35d2.css",
-    "static/js/main.3cd96784.js"
+    "static/js/main.66edb3a3.js"
   ]
 }
