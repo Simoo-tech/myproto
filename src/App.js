@@ -1,6 +1,6 @@
 import "./App.scss";
 import Home from "./views/home/Home";
-import { Route, Routes } from "react-router";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import Navs from "./component/header/Nav";
 import About from "./views/about/About";
 import Resume from "./views/resume/Resume";
@@ -10,13 +10,15 @@ function App() {
   return (
     <div className="App">
       <Navs />
-      <Routes basename="/myproto">
-        <Route path="myproto" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="resume" element={<Resume />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="portfolio" element={<Protofilo />} />
-      </Routes>
+      <Router basename="/myproto">
+        <Routes>
+          <Route path="/myproto" exact element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Protofilo />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
