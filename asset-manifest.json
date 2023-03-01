@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/myproto/static/css/main.c37f0ea5.css",
-    "main.js": "/myproto/static/js/main.cd0ef75a.js",
+    "main.js": "/myproto/static/js/main.be5432e8.js",
     "static/js/787.26e5272e.chunk.js": "/myproto/static/js/787.26e5272e.chunk.js",
     "static/media/temp1.png": "/myproto/static/media/temp1.e30df105935509da7ebb.png",
     "static/media/intro cyber sec.pdf_1.jpg": "/myproto/static/media/intro cyber sec.pdf_1.610026d5b58491b3940f.jpg",
@@ -16,11 +16,11 @@
     "static/media/temp3.png": "/myproto/static/media/temp3.e907664a06d5f623c763.png",
     "index.html": "/myproto/index.html",
     "main.c37f0ea5.css.map": "/myproto/static/css/main.c37f0ea5.css.map",
-    "main.cd0ef75a.js.map": "/myproto/static/js/main.cd0ef75a.js.map",
+    "main.be5432e8.js.map": "/myproto/static/js/main.be5432e8.js.map",
     "787.26e5272e.chunk.js.map": "/myproto/static/js/787.26e5272e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c37f0ea5.css",
-    "static/js/main.cd0ef75a.js"
+    "static/js/main.be5432e8.js"
   ]
 }
