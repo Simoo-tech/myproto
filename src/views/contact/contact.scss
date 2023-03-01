@@ -51,6 +51,7 @@
       text-transform: capitalize;
     }
     a {
+      margin-top: 20px;
       background-color: $color1;
       color: white;
       padding: 5px 10px;
@@ -73,6 +74,22 @@
       }
       p {
         font-size: 14px;
+      }
+    }
+  }
+  @include breakpoint(large) {
+    div {
+      h2 {
+        font-size: 35px;
+      }
+      h4 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 20px;
+      }
+      a {
+        font-size: 20px;
       }
     }
   }
@@ -186,6 +203,30 @@
         }
         button {
           width: 100%;
+        }
+      }
+    }
+  }
+  @include breakpoint(large) {
+    .row {
+      .info {
+        h3 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+      form {
+        h3 {
+          font-size: 40px;
+        }
+        input,
+        textarea {
+          font-size: 20px;
+        }
+        button {
+          font-size: 20px;
         }
       }
     }

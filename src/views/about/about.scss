@@ -104,4 +104,38 @@
       margin-bottom: 10px;
     }
   }
+  @include breakpoint(large) {
+    align-items: center;
+    .row {
+      h2 {
+        font-size: 45px;
+      }
+      h3 {
+        font-size: 30px;
+      }
+      .text {
+        div {
+          margin-bottom: 10px;
+          padding-left: 10px;
+          span {
+            font-size: 20px;
+          }
+          p,
+          a {
+            font-size: 19px;
+          }
+        }
+      }
+      .media {
+        b {
+          font-size: 20px;
+        }
+        ul {
+          a svg {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
 }

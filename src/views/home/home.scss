@@ -85,4 +85,23 @@
       }
     }
   }
+  @include breakpoint(large) {
+    .row {
+      .text {
+        h3 {
+          font-size: 100px !important;
+        }
+        .skill {
+          font-size: 45px !important;
+        }
+      }
+      .social {
+        a {
+          svg {
+            font-size: 35px !important;
+          }
+        }
+      }
+    }
+  }
 }

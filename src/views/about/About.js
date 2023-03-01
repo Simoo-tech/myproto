@@ -12,30 +12,30 @@ const About = () => {
         </h1>
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-5 ">
+            <div className="col-12 col-md-5 col-xl-6">
               <img src={img1} alt="" />
             </div>
-            <div className="col-12 col-md-7 text">
+            <div className="col-12 col-md-7 col-xl-6 text">
               <h2 className="col-12">Who am I ?</h2>
               <h3 className="col-12">
                 I'm Salah Eldin, a visual UX/UI Designer and React Front-End
                 Developer
               </h3>
-              <div className="name col-12 col-xl-6">
+              <div className="name col-12 col-xl-6 ">
                 <span>Name:</span>
                 <p>salah eldin mahmoud</p>
               </div>
-              <div className="age col-12 col-xl-6 ">
+              <div className="age col-12 col-xl-5  ">
                 <span>Age:</span>
                 <p>20</p>
               </div>
-              <div className="email col-12 col-xl-6">
+              <div className="email col-12 col-xl-8">
                 <span>Email:</span>
                 <a href="mailto:salaheldinhamed19@gmail.com">
                   salaheldinhamed19@gmail.com
                 </a>
               </div>
-              <div className="from col-12 col-xl-6">
+              <div className="from col-12 col-xl-4">
                 <span>from:</span>
                 <p>Egypt, Cairo</p>
               </div>

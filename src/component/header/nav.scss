@@ -110,5 +110,18 @@
         }
       }
     }
+    @include breakpoint(large) {
+      .collapse {
+        .nav {
+          ul {
+            li {
+              a {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
