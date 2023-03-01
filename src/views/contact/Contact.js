@@ -30,7 +30,7 @@ function Contact() {
           <h2>Thank you for messaging us</h2>
           <h4>I appreciate your message</h4>
           <p>We will contact you as soon as possible</p>
-          <a href="/">Back to main page</a>
+          <a href="/myproto">Back to main page</a>
         </div>
       </div>
       <div className="contact mb-5">

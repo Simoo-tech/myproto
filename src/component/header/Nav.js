@@ -16,7 +16,7 @@ export default function Navs() {
       <div className="navbar">
         <Container>
           <Navbar.Brand className="logo col-6 col-lg-4">
-            <Link to="/">
+            <Link to="/myproto">
               <img src={logo} alt="" srcset="" />
               <h3>Salah Eldin</h3>
             </Link>
@@ -34,7 +34,7 @@ export default function Navs() {
             <Nav>
               <ul>
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/myproto">Home</Link>
                 </li>
                 <li>
                   <Link to="/about">About</Link>

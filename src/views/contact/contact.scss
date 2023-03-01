@@ -62,6 +62,20 @@
       -o-border-radius: 10px;
     }
   }
+  @include breakpoint(smallphone) {
+    div {
+      width: 90%;
+      h2 {
+        font-size: 20px;
+      }
+      h4 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
 }
 .contact {
   form {
