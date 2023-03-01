@@ -8,18 +8,18 @@ import Contact from "./views/contact/Contact";
 import Protofilo from "./views/protofolio/protofilo";
 function App() {
   return (
-    <div className="App">
-      <Navs />
-      <Router basename="/myproto">
+    <Router basename="/myproto">
+      <div className="App">
+        <Navs />
         <Routes>
-          <Route path="/myproto" exact element={<Home />} />
+          <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Protofilo />} />
         </Routes>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 
