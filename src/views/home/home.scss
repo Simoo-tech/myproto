@@ -74,6 +74,7 @@
     }
   }
   @include breakpoint(smallphone) {
+    height: calc(90vh - 70px);
     .row {
       .text {
         h3 {
@@ -84,6 +85,9 @@
         }
       }
     }
+  }
+  @include breakpoint(small) {
+    height: calc(90vh - 70px);
   }
   @include breakpoint(large) {
     .row {
