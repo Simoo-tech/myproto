@@ -7,7 +7,7 @@ import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 
 function Contact() {
-  const [isSubmit, setIsSubmit] = useState(true);
+  const [isSubmit, setIsSubmit] = useState(false);
 
   const form = useRef();
   const sendEmail = (e) => {
