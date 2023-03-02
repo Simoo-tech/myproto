@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./contact.scss";
 import { BiIntersect } from "react-icons/bi";
 import { MdPhone } from "react-icons/md";
@@ -7,22 +7,28 @@ import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 
 function Contact() {
+  const [isSubmit, setIsSubmit] = useState(true);
+
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSubmit(false);
     emailjs
       .sendForm("service_asavivj", "temp1", form.current, "IRI63lBxmIVAro7tT")
       .then(
         (result) => {
-          console.log(result.text);
-          if (result.text === "OK") {
-            let submit = document.querySelector(".submit");
-            submit.classList.add("active");
-          }
+          setTimeout(() => {
+            if (result.text === "OK") {
+              let submit = document.querySelector(".submit");
+              submit.classList.add("active");
+              setIsSubmit(true);
+            }
+          }, 2000);
         },
         (error) => {}
       );
   };
+
   return (
     <>
       <div className="submit">
@@ -72,7 +78,15 @@ function Contact() {
                 name="message"
               />
               <button type="submit" value="Send">
-                Send Message
+                {isSubmit ? (
+                  <p>Send Message</p>
+                ) : (
+                  <div className="send">
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                  </div>
+                )}
               </button>
             </form>
             <div className="info col-12 col-lg-5">
