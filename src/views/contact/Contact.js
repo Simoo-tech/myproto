@@ -1,14 +1,19 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import "./contact.scss";
 import { BiIntersect } from "react-icons/bi";
 import { MdPhone } from "react-icons/md";
 import { GrMail } from "react-icons/gr";
 import emailjs from "@emailjs/browser";
-import { Link } from "react-router-dom";
-
+import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
 function Contact() {
-  const [isSubmit, setIsSubmit] = useState(false);
-
+  //////////////////// Email Checker//////////////////
+  const [email, setEmail] = useState("");
+  const rgExp = /\b[\w\.-]+@[\a-z\.-]+\.\w{2,4}\b/g;
+  const CheckEmail = rgExp.test(email);
+  if (CheckEmail) {
+  }
+  //////////////// On Submit ////////////////////
+  const [isSubmit, setIsSubmit] = useState(true);
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -55,13 +60,22 @@ function Contact() {
                   required
                   className="col-12 col-lg-5"
                 />
-                <input
-                  type="email"
-                  placeholder="Email"
-                  name="user_email"
-                  required
-                  className="col-12 col-lg-6"
-                />
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    name="user_email"
+                    required
+                    className="col-12 col-lg-7"
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                  <AiOutlineCheckCircle
+                    className={CheckEmail ? "check active" : "check"}
+                  />
+                  <AiOutlineCloseCircle
+                    className={CheckEmail ? "wrong " : "wrong active"}
+                  />
+                </div>
               </div>
               <input
                 type="text"
@@ -77,7 +91,17 @@ function Contact() {
                 required
                 name="message"
               />
-              <button type="submit" value="Send">
+              <button
+                type="submit"
+                value="Send"
+                onClick={
+                  CheckEmail
+                    ? ""
+                    : (e) => {
+                        e.preventDefault();
+                      }
+                }
+              >
                 {isSubmit ? (
                   <p>Send Message</p>
                 ) : (

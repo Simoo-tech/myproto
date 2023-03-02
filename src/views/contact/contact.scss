@@ -129,6 +129,35 @@
         border: none;
         color: $color3;
       }
+      div {
+        position: relative;
+        width: 55%;
+        input {
+          width: 100%;
+        }
+        svg {
+          position: absolute;
+          font-size: 30px;
+          right: 10px;
+          top: 39%;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          display: none;
+          &.active {
+            display: block;
+          }
+        }
+
+        .check {
+          color: green;
+        }
+        .wrong {
+          color: red;
+        }
+      }
     }
     input,
     textarea {
